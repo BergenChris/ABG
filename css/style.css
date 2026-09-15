@@ -13,9 +13,9 @@ a {
   margin-bottom: 0;
   border-radius: 0;
   height: 90px;
-  background: #0C155C;
-  color: #fff;
+  color: #0C155C;
   font-size: 20px;
+  border-bottom: 10px solid #0C155C;
 }
 
 .navbar .container {
@@ -42,7 +42,7 @@ a {
 
 /* Navbar links: standaard wit en bold */
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff !important;
+  color: #0C155C !important;
   font-weight: bold !important;
   transition: color 0.2s ease;
 }
