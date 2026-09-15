@@ -24,10 +24,10 @@
 }
 
 .social-section {
-    background-color: #0C155C;
-    color: #ffffff;
-    text-align: center;
-     padding: 20px 0;
+  background-color: #0c155c;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .cookie-bar {
@@ -40,7 +40,7 @@
   padding: 15px;
   font-size: 13px;
   z-index: 1000;
-  box-shadow: 0 -2px 6px rgba(0,0,0,.15);
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .cookie-bar .btn {
@@ -58,7 +58,6 @@
   display: inline-block;
   height: 30px;
 }
-
 
 @media (max-width: 767px) {
   .hero-title h1 {
