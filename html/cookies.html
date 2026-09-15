@@ -13,7 +13,6 @@
 <body>
 
 <!-- Navbar -->
-<!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container" style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
     
@@ -122,7 +121,7 @@
                </div>
                
                <!-- Sub-cookies van Other (Ingesprongen via padding-left) -->
-               <div class="redim-cc-cookies" style="padding-left: 25px;">
+               <div class="redim-cc-cookies" id="other-subcookies" style="padding-left: 25px;">
                   <div class="redim-cc-cookie-item">
                      <label class="redim-cc-switch"><input type="checkbox" checked><span class="redim-cc-slider"></span></label>
                      <span><code>mcforms-25358287-sessionId</code></span>
@@ -192,5 +191,14 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+  // Zorgt dat alle onderliggende checkboxes van 'Other' mee- en uitvinken
+  $(document).ready(function() {
+    $('#toggle-other').on('change', function() {
+      var isChecked = $(this).is(':checked');
+      $('#other-subcookies input[type="checkbox"]').prop('checked', isChecked);
+    });
+  });
+</script>
 </body>
 </html>
